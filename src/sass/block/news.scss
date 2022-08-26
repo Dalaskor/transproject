@@ -1,0 +1,128 @@
+.news {
+    &__container {
+        padding-top: 225px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+
+    }
+
+    &__all {
+        display: flex;
+        align-items: center;
+        gap: 19px;
+        font-family: 'Euclid Circular A';
+        font-style: normal;
+        font-weight: 500;
+        font-size: $post-title-font-size;
+        line-height: 3.2rem;
+        color: $post-title-color;
+        transition: 0.4s;
+
+        svg path {
+            fill: $post-title-color;
+            stroke: $post-title-color;
+            transition: 0.4s;
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: $orange-color;
+
+            svg path {
+                fill: $orange-color;
+                stroke: $orange-color;
+            }
+        }
+    }
+
+    &__list {
+        padding-top: 46px;
+    }
+
+    &__item {
+        margin-top: 42px;
+        &:first-child {
+            margin-top: 0px;
+        }
+    }
+}
+
+.new {
+    display: grid;
+    grid-template-columns: minmax(0px, 511px) auto;
+    grid-template-rows: repeat(4, auto);
+    grid-column-gap: 58px;
+    padding: 0px 0px 8px 0px;
+    border-bottom: 1px solid #D4DBEE;
+
+    &__image {
+        max-width: 511px;
+        grid-column: 1;
+        grid-row: 1 / 4;
+        img {
+            width: 511px;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        font-family: 'Euclid Circular A';
+        font-style: normal;
+        font-weight: 500;
+        font-size: $post-title-font-size;
+        line-height: 3.2rem;
+        color: $post-title-color;
+        grid-column: 2;
+        grid-row: 1;
+        max-width: 893px;
+    }
+
+    &__description {
+        font-family: 'Euclid Circular A';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $base-font-size;
+        line-height: 143%;
+        color: $post-title-color;
+        grid-column: 2;
+        grid-row: 2;
+        max-width: 893px;
+    }
+
+    &__bottom {
+        grid-column: 2;
+        grid-row: 3 / 5;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    &__date {
+        font-family: 'Euclid Circular A';
+        font-style: normal;
+        font-weight: 700;
+        font-size: $title-font-size;
+        line-height: 113%;
+        color: $title-color;
+        span {
+            font-size: 3rem;
+            line-height: 3.8rem;
+            margin-left: 15px;
+        }
+    }
+
+    &__link {
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        background: url('../img/btn-arrow.svg') no-repeat center center $orange-color;
+    }
+}

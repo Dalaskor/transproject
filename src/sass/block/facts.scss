@@ -2,7 +2,7 @@
     &__container {
         padding: 222px 0px 0px 0px;
         display: grid;
-        grid-template-columns: repeat(2, 744px);
+        grid-template-columns: repeat(2, minmax(0px, 744px));
         justify-content: space-between;
     }
 
