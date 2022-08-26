@@ -62,6 +62,10 @@
     padding: 0px 0px 8px 0px;
     border-bottom: 1px solid #D4DBEE;
 
+    &:last-child {
+        border-bottom: none;
+    }
+
     &__image {
         max-width: 511px;
         grid-column: 1;

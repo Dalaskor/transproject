@@ -28,6 +28,7 @@
 }
 
 .main {
+    overflow: hidden;
 }
 
 .logo {
@@ -74,3 +75,6 @@
 @import "block/mission";
 @import "block/directions";
 @import "block/news";
+@import "block/projects";
+
+@import "block/contacts";
