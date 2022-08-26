@@ -1,0 +1,89 @@
+.mission {
+    &__container {
+        padding: 231px 0px 0px 0px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-column-gap: 58px;
+        position: relative;
+    }
+
+    &__images {
+        grid-column: 1;
+        grid-row: 1 / 5;
+    }
+
+    &__image {
+        max-width: 510px;
+        img {
+            width: 510px;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    &__subtitle {
+        grid-column: 2;
+        grid-row: 2;
+        margin-top: 6px;
+    }
+
+    &__descriptions {
+        grid-column: 2;
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 63px;
+        justify-content: space-between;
+
+    }
+
+    &__description {
+
+    }
+
+    &__more {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        grid-column: 2;
+        grid-row: 4;
+        margin-top: auto;
+        a {
+            display: block;
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            background: url('../img/btn-arrow.svg') no-repeat center center $slider-btn-color;
+            transition: 0.4s;
+            &:hover {
+                cursor: pointer;
+                opacity: 0.8;
+            }
+        }
+        span {
+            font-family: 'Euclid Circular A';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 2.5rem;
+            line-height: 3.2rem;
+            color: #292A3F;
+        }
+    }
+
+    &__quality {
+        max-width: 149px;
+        position: absolute;
+        right: 0px;
+        bottom: -89px;
+        z-index: 99;
+        img {
+            width: 149px;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.facts {
+    &__container {
+        padding: 222px 0px 0px 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 744px);
+        justify-content: space-between;
+    }
+
+    &__fact {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-row-gap: 56px;
+        grid-column-gap: 30px;
+        position: relative;
+    }
+
+    &__title {
+        grid-column: 1 / 3;
+        grid-row: 1;
+    }
+
+    &__image {
+        grid-column: 1;
+        grid-row: 2;
+        max-width: 277px;
+        max-height: 283px;
+        img {
+            width: 277px;
+            height: 283px;
+            object-fit: cover;
+        }   
+    }
+
+    &__description {
+        grid-column: 2;
+        grid-row: 2;
+        margin-top: -7px;
+    }
+
+    &__link {
+        font-family: 'Euclid Circular A';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+        color: $orange-color;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+}

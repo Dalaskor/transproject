@@ -1,0 +1,74 @@
+@import "set";
+@import "_fonts";
+@import "_vars";
+@import "_mixins";
+
+[class*="__container"] {
+    max-width: 1604px;
+    margin: 0px auto;
+
+    @media (max-width: 1788px) {
+        max-width: 1604px;
+    }
+    @media (max-width: 1628px) {
+        max-width: 1470px;
+    }
+    @media (max-width: 1087px) {
+        max-width: 970px;
+    }
+    @media (max-width: 992.98px) {
+        max-width: 750px;
+    }
+    @media (max-width: 768.98px) {
+        max-width: none;
+    }
+    @media (max-width: 479.98px) {
+        max-width: none;
+    }
+}
+
+.main {
+}
+
+.logo {
+    max-width: 281px;
+    max-height: 237px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.title {
+    font-family: 'Euclid Circular A';
+    font-style: normal;
+    font-weight: 700;
+    font-size: $title-font-size;
+    line-height: 113%;
+    color: $title-color;
+}
+
+.subtitle {
+    font-family: 'Euclid Circular A';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $subtitle-font-size;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+    color: $orange-color;
+}
+
+.description {
+    font-family: 'Euclid Circular A';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $description-font-size;
+    line-height: 3rem;
+    color: $base-color;
+}
+
+@import "block/header";
+@import "block/about";
+@import "block/facts";
+@import "block/mission";
