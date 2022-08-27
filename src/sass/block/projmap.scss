@@ -1,0 +1,316 @@
+.projmap {
+    &__container {
+        position: relative;
+        margin-top: 183px;
+        padding-top: 132px;
+    }
+
+    &__texts {
+        max-width: 479px;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    &__title {}
+
+    &__description {}
+
+    &__counters {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        position: absolute;
+        top: 30px;
+        right: 0px;
+    }
+
+    &__counter {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        max-width: 260px;
+    }
+
+    &__number {
+        opacity: 0;
+        font-family: 'Euclid Circular A';
+        font-style: normal;
+        font-weight: 700;
+        font-size: $title-font-size;
+        line-height: 113%;
+        color: $orange-color;
+    }
+
+    &__subtext {
+        font-family: 'Euclid Circular A';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $base-font-size;
+        line-height: 143%;
+        color: #333333;
+    }
+
+    &__map {
+        max-width: 1604px;
+        height: 840px;
+        position: relative;
+        transition: 0.4s;
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+        svg path {
+            fill: #ADADAD;
+            &:hover {
+                stroke: $orange-color;
+            }
+        }
+        svg .ready {
+            fill: #6D7FAD;
+        }
+
+        svg .select {
+            fill: #5D6C94;
+        }
+    }
+}
+
+.mapblock-ready {
+    max-width: 447px;
+    background-color: #fff;
+    // position: absolute;
+    z-index: 9999;
+    display: none;
+
+    &_show {
+        display: block;
+    }
+
+    &__decor {
+        position: absolute;
+        bottom: -12px;
+        left: 81px;
+        width: 19px;
+        height: 13px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        padding-top: 19px;
+    }
+
+    &__image {
+        max-width: 144px;
+        max-height: 52px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__name {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    &__suptitle {
+        font-family: 'Euclid Circular A';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        color: #A6A6A6;
+    }
+
+    &__title {
+        font-family: 'Euclid Circular A';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        color: $orange-color;
+    }
+
+    &__body {
+        padding: 20px 20px 24px 14px;
+    }
+
+    &__empty {
+        display: none;
+        &_active {
+            display: block;
+        }
+
+        p {
+            font-family: 'Euclid Circular A';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2.1rem;
+            line-height: 143%;
+            color: #292A3F;
+        }
+
+        a {
+            display: block;
+            margin: 0px auto;
+            margin-top: 20px;
+            font-family: 'Euclid Circular A';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2.2rem;
+            line-height: 2.8rem;
+            text-align: center;
+            text-decoration-line: underline;
+            text-transform: uppercase;
+            color: $orange-color;
+        }
+    }
+
+    &__list {
+        display: none;
+        &_active {
+            display: flex;
+            flex-direction: column;
+            max-height: 210px;
+            overflow-y: auto;
+        }
+
+        scrollbar-color: #003D79 #D4DBEE;
+        scrollbar-width: thin;
+
+        &::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+            background-color: #D4DBEE;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #003D79;
+        }
+    }
+
+    &__project {
+        padding-top: 20px;
+        padding-bottom: 22px;
+        max-width: 387px;
+        border-bottom: 1px solid #6D7FAD;
+        &:first-child {
+            padding-top: 0px;
+        }
+        &:last-child {
+            padding-bottom: 0px;
+            border-bottom: none;
+        }
+    }
+
+    &__link {
+        font-family: 'Euclid Circular A';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        color: #003D79;
+    }
+}
+
+.project {
+    display: none;
+    &_show {
+        display: block;
+    }
+    &__container {
+        display: grid;
+        grid-template-columns: minmax(0, 511px) repeat(2, minmax(0, 509px));
+        // grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-column-gap: 59px;
+        grid-row-gap: 50px;
+        margin-top: 60px;
+    }
+
+    &__name {
+        grid-column: 1 / 4;
+        grid-row: 1;
+        font-family: 'Euclid Circular A';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 3.2rem;
+        color: #003D79;
+    }
+
+    &__image {
+        grid-column: 1;
+        grid-row: 2 / 4;
+        max-width: 511px;
+        max-height: 336px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        font-family: 'Euclid Circular A';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+        text-transform: uppercase;
+        color: $orange-color;
+    }
+
+    &__text {
+        font-family: 'Euclid Circular A';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $base-font-size;
+        line-height: 143%;
+        color: $post-title-color;
+    }
+
+    &__initiator {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    &__terms {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    &__finance {
+        grid-column: 3;
+        grid-row: 2 / 4;
+    }
+
+    &__graph {
+        grid-column: 3;
+        grid-row: 3;
+        max-width: 200px;
+        max-height: 200px;
+        margin: 38px auto 0px auto;
+        canvas {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__description {
+        grid-column: 1 / 4;
+        grid-row: 4;
+    }
+}

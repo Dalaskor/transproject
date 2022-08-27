@@ -51,9 +51,12 @@
     "gulp-webp": "^4.0.1",
     "gulp-webp-css": "^1.1.0",
     "gulp-webp-html": "^1.0.2",
-    "jquery": "^3.6.0",
+    "jquery": "^3.6.1",
     "sass": "^1.54.5",
     "webpack": "^5.74.0",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "chart.js": "^3.9.1"
   }
 }

@@ -10,20 +10,20 @@
     @media (max-width: 1788px) {
         max-width: 1604px;
     }
-    @media (max-width: 1628px) {
-        max-width: 1470px;
+    @media (max-width: 1399.98px) {
+        max-width: 1320px;
     }
-    @media (max-width: 1087px) {
-        max-width: 970px;
+    @media (max-width: 1199.98px) {
+        max-width: 1140px;
     }
-    @media (max-width: 992.98px) {
-        max-width: 750px;
+    @media (max-width: 991.98px) {
+        max-width: 960px;
     }
-    @media (max-width: 768.98px) {
-        max-width: none;
+    @media (max-width: 767.98px) {
+        max-width: 720px;
     }
-    @media (max-width: 479.98px) {
-        max-width: none;
+    @media (max-width: 575.98px) {
+        max-width: 100%;
     }
 }
 
@@ -76,5 +76,6 @@
 @import "block/directions";
 @import "block/news";
 @import "block/projects";
-
+@import "block/projmap";
+@import "block/reviews";
 @import "block/contacts";

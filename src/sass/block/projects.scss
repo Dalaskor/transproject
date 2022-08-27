@@ -28,6 +28,16 @@
         &_active {
             display: block;
         }
+        animation-name: fade;
+        animation-duration: 1.5s;
+        @keyframes fade {
+            from {
+                opacity: 0.4
+            }
+            to {
+                opacity: 1
+            }
+        }
     }
 
     &__subtitle {
@@ -54,6 +64,16 @@
         max-width: 260px;
         position: relative;
         order: 3;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        @keyframes fade {
+            from {
+                opacity: 0.4
+            }
+            to {
+                opacity: 1
+            }
+        }
         div {
             display: block;
             position: absolute;
