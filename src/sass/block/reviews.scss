@@ -4,6 +4,9 @@
         display: grid;
         grid-template-columns: auto repeat(2, minmax(0px, 484px));
         grid-template-rows: repeat(2, auto);
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     &__title {
@@ -61,6 +64,9 @@
         line-height: 143%;
         color: $base-color;
         grid-row: 1;
+        height: 332px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     &__author {

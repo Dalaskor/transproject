@@ -3,6 +3,10 @@
         position: relative;
         margin-top: 183px;
         padding-top: 132px;
+        @media (max-width: 768px) {
+            margin-top: 50px;
+            padding-top: 0px;
+        }
     }
 
     &__texts {
@@ -13,6 +17,9 @@
         position: absolute;
         top: 0px;
         left: 0px;
+        @media (max-width: 768px) {
+            position: static;
+        }
     }
 
     &__title {}
@@ -26,6 +33,10 @@
         position: absolute;
         top: 30px;
         right: 0px;
+        @media (max-width: 768px) {
+            position: static;
+            margin-top: 25px;
+        }
     }
 
     &__counter {
@@ -43,6 +54,9 @@
         font-size: $title-font-size;
         line-height: 113%;
         color: $orange-color;
+        @media (max-width: 768px) {
+            font-size: $title-font-size-mobile;
+        }
     }
 
     &__subtext {
@@ -52,6 +66,7 @@
         font-size: $base-font-size;
         line-height: 143%;
         color: #333333;
+        font-size: $description-font-size-moblie;
     }
 
     &__map {
@@ -76,6 +91,9 @@
         svg .select {
             fill: #5D6C94;
         }
+        @media (max-width: 768px) {
+            height: 50vh;
+        }
     }
 }
 
@@ -85,6 +103,9 @@
     // position: absolute;
     z-index: 9999;
     display: none;
+    @media (max-width: 768px) {
+        max-width: 223px;
+    }
 
     &_show {
         display: block;
@@ -238,6 +259,10 @@
         grid-column-gap: 59px;
         grid-row-gap: 50px;
         margin-top: 60px;
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__name {
@@ -260,6 +285,10 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            max-width: 100vw;
+            overflow: hidden;
         }
     }
 

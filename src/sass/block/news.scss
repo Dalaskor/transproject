@@ -1,6 +1,9 @@
 .news {
     &__container {
         padding-top: 225px;
+        @media (max-width: 768px) {
+            padding-top: 100px;
+        }
     }
 
     &__header {
@@ -55,24 +58,42 @@
 }
 
 .new {
-    display: grid;
-    grid-template-columns: minmax(0px, 511px) auto;
-    grid-template-rows: repeat(4, auto);
-    grid-column-gap: 58px;
-    padding: 0px 0px 8px 0px;
+    // display: grid;
+    // grid-template-columns: minmax(0px, 511px) auto;
+    // grid-template-rows: repeat(4, auto);
+    // grid-column-gap: 58px;
+    padding: 0px 0px 60px 0px;
     border-bottom: 1px solid #D4DBEE;
+    display: flex;
+    gap: 58px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 
     &:last-child {
         border-bottom: none;
     }
 
+    &__body {
+        display: flex;
+        flex-direction: column;
+        max-width: 1035px;
+        width: 100%;
+        gap: 27px;
+    }
+
     &__image {
         max-width: 511px;
-        grid-column: 1;
-        grid-row: 1 / 4;
+        // grid-column: 1;
+        // grid-row: 1 / 4;
         img {
             width: 100%;
             object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            max-width: 100vw;
         }
     }
 
@@ -83,8 +104,8 @@
         font-size: $post-title-font-size;
         line-height: 3.2rem;
         color: $post-title-color;
-        grid-column: 2;
-        grid-row: 1;
+        // grid-column: 2;
+        // grid-row: 1;
         max-width: 893px;
     }
 
@@ -95,18 +116,19 @@
         font-size: $base-font-size;
         line-height: 143%;
         color: $post-title-color;
-        grid-column: 2;
-        grid-row: 2;
+        // grid-column: 2;
+        // grid-row: 2;
         max-width: 893px;
     }
 
     &__bottom {
-        grid-column: 2;
-        grid-row: 3 / 5;
+        // grid-column: 2;
+        // grid-row: 3 / 5;
+        margin-top: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 15px;
+        margin-bottom: -18px;
     }
 
     &__date {
@@ -128,5 +150,9 @@
         height: 85px;
         border-radius: 50%;
         background: url('../img/btn-arrow.svg') no-repeat center center $orange-color;
+        @media (max-width: 768px) {
+            width: 65px;
+            height: 65px;
+        }
     }
 }

@@ -1,4 +1,7 @@
 .projects {
+    @media (max-width: 768px) {
+        display: none;
+    }
     &__container {
         padding: 164px 0px 0px 0px;
     }
@@ -10,17 +13,21 @@
 
 .project-slider {
     &__item {
-        display: none;
-        &_active {
-            display: grid;
-            grid-template-columns: minmax(0, 533px) auto;
-            grid-column-gap: 37px;
-        }
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(0, 533px) auto;
+        grid-column-gap: 37px;
+        height: 538px;
+        text-overflow: ellipsis;
     }
 
     &__body {
         grid-column: 1;
         grid-row: 1;
+        min-height: 437px;
+        max-height: 538px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     &__text {
@@ -53,6 +60,10 @@
     }
 
     &__images {
+        position: absolute;
+        top: 1px;
+        right: -253px;
+        min-height: 538px;
         grid-column: 2;
         grid-row: 1;
         display: flex;
@@ -62,6 +73,7 @@
 
     &__image {
         max-width: 260px;
+        max-height: 538px;
         position: relative;
         order: 3;
         animation-name: fade;
@@ -93,7 +105,8 @@
             writing-mode: vertical-lr;
         }
         img {
-            width: 260px;
+            // width: 260px;
+            width: 100%;
             height: 100%;
             object-fit: cover;
         }
@@ -102,10 +115,12 @@
             max-width: 676px;
             max-height: 538px;
             order: 1;
-            filter: drop-shadow(30px 20px 70px rgba(38, 40, 55, 0.2));
+            filter: drop-shadow(10px 10px 10px rgba(38, 40, 55, 0.2));
             img {
-                width: 676px;
-                height: 538px;
+                // width: 676px;
+                // height: 538px;
+                width: 100%;
+                height: 100%;
                 object-fit: cover;
             }
             div {
@@ -121,7 +136,7 @@
     &__bottom {
         display: flex;
         align-items: end;
-        margin-top: 41px;
+        margin-top: 143px;
     }
 
     &__buttons {

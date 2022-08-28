@@ -47,7 +47,11 @@ export function mapScript () {
         }, 400);
         $('.mapblock-ready').hide();
         $('.projmap__map svg .select').toggleClass('select');
-        $('.projmap__map').height('40vh');
+        if ($(window).width() <= '768') {
+            $('.projmap__map').height('30vh');
+        } else {
+            $('.projmap__map').height('40vh');
+        }
         $('.project').slideDown('1000');
     });
 

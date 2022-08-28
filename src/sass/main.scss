@@ -22,12 +22,16 @@
     @media (max-width: 767.98px) {
         max-width: 720px;
     }
-    @media (max-width: 575.98px) {
-        max-width: 100%;
+    @media (max-width: 375.98px) {
+        max-width: 373px;
     }
 }
 
 .main {
+    overflow: hidden;
+}
+
+.scroll-lock{
     overflow: hidden;
 }
 
@@ -48,6 +52,9 @@
     font-size: $title-font-size;
     line-height: 113%;
     color: $title-color;
+    @media (max-width: 768px) {
+        font-size: $title-font-size-mobile;
+    }
 }
 
 .subtitle {
@@ -67,6 +74,9 @@
     font-size: $description-font-size;
     line-height: 3rem;
     color: $base-color;
+    @media (max-width: 768px) {
+        font-size: $description-font-size-moblie;
+    }
 }
 
 @import "block/header";

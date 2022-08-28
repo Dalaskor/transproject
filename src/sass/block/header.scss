@@ -4,28 +4,89 @@
     margin: 0px auto;
     left: 0;
     right: 0;
+    @media (max-width: 768px) {
+        background-color: #fff;
+    }
 
     &__container {
         max-width: 1775px;
         padding: 74px 0px 0px 0px;
         display: grid;
         grid-template-columns: auto auto;
+        @media (max-width: 768px) {
+            max-width: 720px;
+            padding: 13px 0px 13px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__burger {
+        display: none;
+        @media (max-width: 768px) {
+            display: block;
+            width: 90px;
+        }
+    }
+
+    &__phone {
+        display: none;
+        @media (max-width: 768px) {
+            display: block;
+            width: 90px;
+            // width: 32px;
+            // height: 32px;
+        }
     }
 
     &__logo {
         padding: 6px 0px 0px 0px;
+        max-width: 281px;
+        max-height: 229px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        @media (max-width: 768px) {
+            max-width: 90px;
+            max-height: 73px;
+            padding: 0px 0px 0px 0px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 
     &__menu {
-
     }
 }
 
 .menu {
+    @media (max-width: 768.98px) {
+        position: absolute;
+        top: 116px;
+        left: -100%;
+        background-color: #fff;
+        width: 100vw;
+        z-index: 9999999;
+        transition: all 0.4s ease;
+        &.open {
+            left: 0;
+        }
+    }
     &__list {
         display: flex;
         align-items: center;
         justify-content: start;
+        @media (max-width: 768.98px) {
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 50px;
+            padding: 50px 25px;
+        }
     }
 
     &__item {
@@ -37,6 +98,9 @@
             height: 14px;
             background-color: $menu-sep-color;
             margin-left: 26px;
+            @media (max-width: 768.98px) {
+                display: none;
+            }
         }
         &:last-child {
             margin: 0px 62px 0px 0px;

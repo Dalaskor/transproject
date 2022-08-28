@@ -3,6 +3,13 @@
         display: flex;
         justify-content: space-between;
         padding-top: 200px;
+        padding-bottom: 25px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            justify-content: start;
+            gap: 25px;
+            padding-top: 100px;
+        }
     }
 
     &__body {
