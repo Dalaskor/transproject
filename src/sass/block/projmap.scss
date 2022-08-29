@@ -2,10 +2,21 @@
     &__container {
         position: relative;
         margin-top: 183px;
-        padding-top: 132px;
+        // padding-top: 132px;
         @media (max-width: 768px) {
             margin-top: 50px;
             padding-top: 0px;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
         }
     }
 
@@ -14,9 +25,9 @@
         display: flex;
         flex-direction: column;
         gap: 22px;
-        position: absolute;
-        top: 0px;
-        left: 0px;
+        // position: absolute;
+        // top: 0px;
+        // left: 15px;
         @media (max-width: 768px) {
             position: static;
         }
@@ -30,9 +41,9 @@
         display: flex;
         align-items: center;
         gap: 30px;
-        position: absolute;
-        top: 30px;
-        right: 0px;
+        // position: absolute;
+        // top: 30px;
+        // right: 15px;
         @media (max-width: 768px) {
             position: static;
             margin-top: 25px;
@@ -104,9 +115,11 @@
     z-index: 9999;
     display: none;
     @media (max-width: 768px) {
+        max-width: 323px;
+    }
+    @media (max-width: 376px) {
         max-width: 223px;
     }
-
     &_show {
         display: block;
     }

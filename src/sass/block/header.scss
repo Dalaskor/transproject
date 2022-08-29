@@ -10,12 +10,14 @@
 
     &__container {
         max-width: 1775px;
-        padding: 74px 0px 0px 0px;
+        padding-top: 74px;
         display: grid;
         grid-template-columns: auto auto;
         @media (max-width: 768px) {
             max-width: 720px;
-            padding: 13px 0px 13px 0px;
+            // padding: 13px 0px 13px 0px;
+            padding-top: 13px;
+            padding-bottom: 13px;
             display: flex;
             justify-content: space-between;
             align-items: center;

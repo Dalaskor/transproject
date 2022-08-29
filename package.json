@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "gulp",
-    "build": "gulp --production"
+    "build": "gulp --production",
+    "deploy": "sh deploy.sh"
   },
   "browserslist": [
     "last 3 versions"

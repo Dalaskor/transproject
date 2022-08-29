@@ -1,8 +1,8 @@
 .directions {
     &__container {
-        padding: 204px 0px 0px 0px;
+        padding-top: 204px;
         @media (max-width: 768px) {
-            padding: 100px 0px 0px 0px;
+            padding-top: 100px;
         }
     }
 
@@ -27,12 +27,14 @@
             display: flex;
             align-items: center;
             padding-top: 20px;
-            width: 440px;
+            // width: 440px;
+            max-width: 440px;
+            width: 100%;
             margin: 0px auto;
         }
         @media (max-width: 376px) {
-            width: 223px;
-            margin: 0px auto;
+            // width: 223px;
+            // margin: 0px auto;
         }
     }
 
@@ -82,9 +84,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 434px;
+    // min-height: 434px;
+    min-height: 571px;
     max-width: 550px;
     padding: 50px 57px 0px 57px;
+    transition: 0.4s;
+    &:hover {
+        cursor: pointer;
+        background: #EDF0F5;
+        // padding: 47px 51px 48px 51px;
+        @media (max-width: 768px) {
+            // padding: 50px 57px 50px 57px;
+        }
+
+        .direction__image {
+            transform: scale(1.1, 1.1);
+            @media (max-width: 768px) {
+                transform: scale(1, 1);
+            }
+        }
+    }
     @media (max-width: 768px) {
         display: none;
         max-width: 100%;
@@ -111,34 +130,18 @@
     }
 
     &_center {
-        // width: 550px;
-        background: #EDF0F5;
-        // min-height: 567px;
-        padding: 47px 51px 48px 51px;
-        @media (max-width: 768px) {
-            padding: 50px 57px 50px 57px;
-        }
-
-        .direction__image {
-            max-width: 263px;
-            img {
-                width: 263px;
-                object-fit: cover;
-            }
-            @media (max-width: 768px) {
-                max-width: 257px;
-                img {
-                    width: 257px;
-                    object-fit: cover;
-                }
-            }
-        }
+        
     }
 
     &__image {
-        max-width: 257px;
+        // max-width: 257px;
+        max-width: 258px;
+        max-height: 287px;
+        transition: 0.4s;
         img {
-            width: 257px;
+            // width: 257px;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
         }
     }

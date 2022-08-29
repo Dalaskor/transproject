@@ -47,7 +47,7 @@ export function sliderDirect () {
         showSlides(slideIndex = n);
     }
 
-    $('.direction').on('click', function () {
+    $('.directions__counter').on('click', function () {
         if($(window).width() <= '768') {
             showSlides(slideIndex += 1);
         }

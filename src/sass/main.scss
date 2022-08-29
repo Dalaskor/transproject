@@ -4,8 +4,9 @@
 @import "_mixins";
 
 [class*="__container"] {
-    max-width: 1604px;
+    max-width: 1634px;
     margin: 0px auto;
+    padding: 0px 15px;
 
     @media (max-width: 1788px) {
         max-width: 1604px;

@@ -1,13 +1,13 @@
 .mission {
     &__container {
-        padding: 231px 0px 0px 0px;
+        padding-top: 231px;
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(4, auto);
         grid-column-gap: 58px;
         position: relative;
         @media (max-width: 768px) {
-            padding: 115px 0px 0px 0px;
+            padding-top: 115px;
             display: flex;
             flex-direction: column;
             gap: 25px;
