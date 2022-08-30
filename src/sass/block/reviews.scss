@@ -26,14 +26,10 @@
         display: none;
         animation-name: fade;
         animation-duration: 1.5s;
-        @keyframes fade {
-            from {
-                opacity: 0.4
-            }
-            to {
-                opacity: 1
-            }
-        }
+        transition: 0.2s;
+        animation-name: fade;
+        animation-duration: 2s;
+        
         &_active {
             display: grid;
             grid-template-columns: auto repeat(2, minmax(0rem, 48.4rem));

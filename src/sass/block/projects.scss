@@ -34,16 +34,9 @@
         &_active {
             display: block;
         }
+        transition: 1s;
         animation-name: fade;
-        animation-duration: 1.5s;
-        @keyframes fade {
-            from {
-                opacity: 0.4
-            }
-            to {
-                opacity: 1
-            }
-        }
+        animation-duration: 2s;
     }
 
     &__subtitle {
@@ -75,16 +68,8 @@
         max-height: 53.8rem;
         position: relative;
         order: 3;
-        animation-name: fade;
-        animation-duration: 1.5s;
-        @keyframes fade {
-            from {
-                opacity: 0.4
-            }
-            to {
-                opacity: 1
-            }
-        }
+        transition: 1s;
+
         div {
             display: block;
             position: absolute;
@@ -102,6 +87,7 @@
             backdrop-filter: blur(3rem);
             transform: rotate(-180deg);
             writing-mode: vertical-lr;
+            transition: 1s;
         }
         img {
             width: 100%;
@@ -120,7 +106,8 @@
                 object-fit: cover;
             }
             div {
-                display: none;
+                // display: none;
+                opacity: 0;
             }
             &+div {
                 order: 2;
