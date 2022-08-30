@@ -2,20 +2,20 @@
     &__container {
         display: flex;
         justify-content: space-between;
-        padding-top: 200px;
-        padding-bottom: 25px;
-        @media (max-width: 768px) {
+        padding-top: 20rem;
+        padding-bottom: 2.5rem;
+        @media (max-width: 76.8rem) {
             flex-direction: column;
             justify-content: start;
-            gap: 25px;
-            padding-top: 100px;
+            gap: 2.5rem;
+            padding-top: 10rem;
         }
     }
 
     &__body {
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 5rem;
     }
 
     &__title {
@@ -25,18 +25,18 @@
     &__infos {
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 4rem;
     }
 
     &__info {
         display: flex;
         align-items: center;
-        gap: 29px;
+        gap: 2.9rem;
     }
 
     &__icon {
-        width: 34px;
-        height: 34px;
+        width: 3.4rem;
+        height: 3.4rem;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -48,7 +48,7 @@
     }
 
     &__text {
-        max-width: 368px;
+        max-width: 36.8rem;
         font-family: 'Euclid Circular A';
         font-style: normal;
         font-weight: 400;
@@ -60,7 +60,7 @@
     &__socials {
         display: flex;
         align-items: center;
-        gap: 39px;
+        gap: 3.9rem;
         margin-top: auto;
     }
 
@@ -79,38 +79,38 @@
 
     &__images {
         display: flex;
-        max-width: 1030px;
+        max-width: 103rem;
         width: 100%;
-        filter: drop-shadow(3px 4px 68px rgba(38, 40, 55, 0.2));
-        @media (max-width: 768px) {
+        filter: drop-shadow(0.3rem 0.4rem 6.8rem rgba(38, 40, 55, 0.2));
+        @media (max-width: 76.8rem) {
             flex-direction: column;
             align-items: center;
         }
     }
 
     &__map {
-        max-width: 515px;
-        max-height: 527px;
+        max-width: 51.5rem;
+        max-height: 52.7rem;
         width: 50%;
         iframe {
             width: 100%;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 76.8rem) {
             width: 100%;
             height: 100%;
         }
     }
 
     &__image {
-        max-width: 515px;
-        max-height: 527px;
+        max-width: 51.5rem;
+        max-height: 52.7rem;
         width: 50%;
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 76.8rem) {
             width: 100%;
         }
     }

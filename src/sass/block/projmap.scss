@@ -1,11 +1,10 @@
 .projmap {
     &__container {
         position: relative;
-        margin-top: 183px;
-        // padding-top: 132px;
-        @media (max-width: 768px) {
-            margin-top: 50px;
-            padding-top: 0px;
+        margin-top: 18.3rem;
+        @media (max-width: 76.8rem) {
+            margin-top: 5rem;
+            padding-top: 0rem;
         }
     }
 
@@ -13,7 +12,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        @media (max-width: 768px) {
+        @media (max-width: 76.8rem) {
             flex-direction: column;
             align-items: start;
             justify-content: start;
@@ -21,14 +20,11 @@
     }
 
     &__texts {
-        max-width: 479px;
+        max-width: 47.9rem;
         display: flex;
         flex-direction: column;
-        gap: 22px;
-        // position: absolute;
-        // top: 0px;
-        // left: 15px;
-        @media (max-width: 768px) {
+        gap: 2.2rem;
+        @media (max-width: 76.8rem) {
             position: static;
         }
     }
@@ -40,21 +36,18 @@
     &__counters {
         display: flex;
         align-items: center;
-        gap: 30px;
-        // position: absolute;
-        // top: 30px;
-        // right: 15px;
-        @media (max-width: 768px) {
+        gap: 3.0rem;
+        @media (max-width: 76.8rem) {
             position: static;
-            margin-top: 25px;
+            margin-top: 2.5rem;
         }
     }
 
     &__counter {
         display: flex;
         flex-direction: column;
-        gap: 5px;
-        max-width: 260px;
+        gap: 0.5rem;
+        max-width: 26rem;
     }
 
     &__number {
@@ -65,7 +58,7 @@
         font-size: $title-font-size;
         line-height: 113%;
         color: $orange-color;
-        @media (max-width: 768px) {
+        @media (max-width: 76.8rem) {
             font-size: $title-font-size-mobile;
         }
     }
@@ -81,8 +74,8 @@
     }
 
     &__map {
-        max-width: 1604px;
-        height: 840px;
+        max-width: 160.4rem;
+        height: 84rem;
         position: relative;
         transition: 0.4s;
         svg {
@@ -102,23 +95,23 @@
         svg .select {
             fill: #5D6C94;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 76.8rem) {
             height: 50vh;
         }
     }
 }
 
 .mapblock-ready {
-    max-width: 447px;
+    max-width: 44.7rem;
     background-color: #fff;
     // position: absolute;
     z-index: 9999;
     display: none;
-    @media (max-width: 768px) {
-        max-width: 323px;
+    @media (max-width: 76.8rem) {
+        max-width: 32.3rem;
     }
-    @media (max-width: 376px) {
-        max-width: 223px;
+    @media (max-width: 37.6rem) {
+        max-width: 22.3rem;
     }
     &_show {
         display: block;
@@ -126,10 +119,10 @@
 
     &__decor {
         position: absolute;
-        bottom: -12px;
-        left: 81px;
-        width: 19px;
-        height: 13px;
+        bottom: -1.2rem;
+        left: 8.1rem;
+        width: 1.9rem;
+        height: 1.3rem;
         img {
             width: 100%;
             height: 100%;
@@ -139,13 +132,13 @@
     &__header {
         display: flex;
         align-items: center;
-        gap: 24px;
-        padding-top: 19px;
+        gap: 2.4rem;
+        padding-top: 1.9rem;
     }
 
     &__image {
-        max-width: 144px;
-        max-height: 52px;
+        max-width: 14.4rem;
+        max-height: 5.2rem;
         img {
             width: 100%;
             height: 100%;
@@ -156,7 +149,7 @@
     &__name {
         display: flex;
         flex-direction: column;
-        gap: 1px;
+        gap: 0.1rem;
     }
 
     &__suptitle {
@@ -178,7 +171,7 @@
     }
 
     &__body {
-        padding: 20px 20px 24px 14px;
+        padding: 2rem 2rem 2.4rem 1.4rem;
     }
 
     &__empty {
@@ -198,8 +191,8 @@
 
         a {
             display: block;
-            margin: 0px auto;
-            margin-top: 20px;
+            margin: 0rem auto;
+            margin-top: 2rem;
             font-family: 'Euclid Circular A';
             font-style: normal;
             font-weight: 400;
@@ -217,7 +210,7 @@
         &_active {
             display: flex;
             flex-direction: column;
-            max-height: 210px;
+            max-height: 21rem;
             overflow-y: auto;
         }
 
@@ -225,8 +218,8 @@
         scrollbar-width: thin;
 
         &::-webkit-scrollbar {
-            width: 6px;
-            height: 6px;
+            width: 0.6rem;
+            height: 0.6rem;
             background-color: #D4DBEE;
         }
 
@@ -236,15 +229,15 @@
     }
 
     &__project {
-        padding-top: 20px;
-        padding-bottom: 22px;
-        max-width: 387px;
+        padding-top: 2rem;
+        padding-bottom: 2.2rem;
+        max-width: 38.7rem;
         border-bottom: 1px solid #6D7FAD;
         &:first-child {
-            padding-top: 0px;
+            padding-top: 0rem;
         }
         &:last-child {
-            padding-bottom: 0px;
+            padding-bottom: 0rem;
             border-bottom: none;
         }
     }
@@ -266,13 +259,13 @@
     }
     &__container {
         display: grid;
-        grid-template-columns: minmax(0, 511px) repeat(2, minmax(0, 509px));
+        grid-template-columns: minmax(0, 51.1rem) repeat(2, minmax(0, 50.9rem));
         // grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(4, auto);
-        grid-column-gap: 59px;
-        grid-row-gap: 50px;
-        margin-top: 60px;
-        @media (max-width: 768px) {
+        grid-column-gap: 5.9rem;
+        grid-row-gap: 5rem;
+        margin-top: 6rem;
+        @media (max-width: 76.8rem) {
             display: flex;
             flex-direction: column;
         }
@@ -292,14 +285,14 @@
     &__image {
         grid-column: 1;
         grid-row: 2 / 4;
-        max-width: 511px;
-        max-height: 336px;
+        max-width: 51.1rem;
+        max-height: 33.6rem;
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 76.8rem) {
             max-width: 100vw;
             overflow: hidden;
         }
@@ -342,9 +335,9 @@
     &__graph {
         grid-column: 3;
         grid-row: 3;
-        max-width: 200px;
-        max-height: 200px;
-        margin: 38px auto 0px auto;
+        max-width: 20rem;
+        max-height: 20rem;
+        margin: 3.8rem auto 0rem auto;
         canvas {
             width: 100%;
             height: 100%;

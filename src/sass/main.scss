@@ -4,28 +4,29 @@
 @import "_mixins";
 
 [class*="__container"] {
-    max-width: 1634px;
+    max-width: 163.4rem;
     margin: 0px auto;
-    padding: 0px 15px;
+    padding: 0rem 1.5rem;
 
-    @media (max-width: 1788px) {
-        max-width: 1604px;
+    // @media (max-width: 178.8rem) {
+    //     max-width: 160.4rem;
+    // }
+    // @media (max-width: 140rem) {
+    //     max-width: 132rem;
+    // }
+    // @media (max-width: 120rem) {
+    //     max-width: 114rem;
+    // }
+    // @media (max-width: 99.2rem) {
+    //     max-width: 96rem;
+    // }
+    @media (max-width: 76.8rem) {
+        // max-width: 72rem;
+        max-width: 100%;
     }
-    @media (max-width: 1399.98px) {
-        max-width: 1320px;
-    }
-    @media (max-width: 1199.98px) {
-        max-width: 1140px;
-    }
-    @media (max-width: 991.98px) {
-        max-width: 960px;
-    }
-    @media (max-width: 767.98px) {
-        max-width: 720px;
-    }
-    @media (max-width: 375.98px) {
-        max-width: 373px;
-    }
+    // @media (max-width: 37.6rem) {
+    //     max-width: 37.3rem;
+    // }
 }
 
 .main {

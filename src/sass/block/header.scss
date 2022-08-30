@@ -1,23 +1,23 @@
 .header {
     position: absolute;
     z-index: 99;
-    margin: 0px auto;
+    margin: 0rem auto;
     left: 0;
     right: 0;
-    @media (max-width: 768px) {
+    @media (max-width: 76.8rem) {
         background-color: #fff;
     }
 
     &__container {
-        max-width: 1775px;
-        padding-top: 74px;
+        max-width: 177.5rem;
+        padding-top: 7.4rem;
         display: grid;
         grid-template-columns: auto auto;
-        @media (max-width: 768px) {
-            max-width: 720px;
-            // padding: 13px 0px 13px 0px;
-            padding-top: 13px;
-            padding-bottom: 13px;
+        @media (max-width: 76.8rem) {
+            // max-width: 72rem;
+            max-width: 100%;
+            padding-top: 1.3rem;
+            padding-bottom: 1.3rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -26,34 +26,36 @@
 
     &__burger {
         display: none;
-        @media (max-width: 768px) {
+        @media (max-width: 76.8rem) {
             display: block;
-            width: 90px;
+            width: 9rem;
         }
     }
 
     &__phone {
         display: none;
-        @media (max-width: 768px) {
+        @media (max-width: 76.8rem) {
             display: block;
-            width: 90px;
-            // width: 32px;
-            // height: 32px;
+            max-width: 9rem;
+            svg {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 
     &__logo {
-        padding: 6px 0px 0px 0px;
-        max-width: 281px;
-        max-height: 229px;
+        padding: 0.6rem 0rem 0rem 0rem;
+        max-width: 28.1rem;
+        max-height: 22.9rem;
         img {
             width: 100%;
             height: 100%;
         }
-        @media (max-width: 768px) {
-            max-width: 90px;
-            max-height: 73px;
-            padding: 0px 0px 0px 0px;
+        @media (max-width: 76.8rem) {
+            max-width: 9rem;
+            max-height: 7.3rem;
+            padding: 0rem 0rem 0rem 0rem;
             img {
                 width: 100%;
                 height: 100%;
@@ -66,12 +68,13 @@
 }
 
 .menu {
-    @media (max-width: 768.98px) {
+    @media (max-width: 76.8rem) {
         position: absolute;
-        top: 116px;
+        top: 11.6rem;
         left: -100%;
         background-color: #fff;
-        width: 100vw;
+        // width: 100vw;
+        width: 100%;
         z-index: 9999999;
         transition: all 0.4s ease;
         &.open {
@@ -82,31 +85,31 @@
         display: flex;
         align-items: center;
         justify-content: start;
-        @media (max-width: 768.98px) {
+        @media (max-width: 76.8rem) {
             flex-direction: column;
             justify-content: start;
             align-items: start;
-            gap: 50px;
-            padding: 50px 25px;
+            gap: 5rem;
+            padding: 5rem 2.5rem;
         }
     }
 
     &__item {
-        margin: 0px 25px 0px 0px;
+        margin: 0rem 2.5rem 0rem 0rem;
         &::after {
             display: inline-block;
             content: '';
-            width: 2px;
-            height: 14px;
+            width: 0.2rem;
+            height: 1.4rem;
             background-color: $menu-sep-color;
-            margin-left: 26px;
-            @media (max-width: 768.98px) {
+            margin-left: 2.6rem;
+            @media (max-width: 76.8rem) {
                 display: none;
             }
         }
         &:last-child {
-            margin: 0px 62px 0px 0px;
-            padding: 0px 0px 0px 0px;
+            margin: 0rem 6.2rem 0rem 0rem;
+            padding: 0rem 0rem 0rem 0rem;
             border-right: none;
             &::after {
                 display: none;

@@ -1,8 +1,8 @@
 .news {
     &__container {
-        padding-top: 225px;
-        @media (max-width: 768px) {
-            padding-top: 100px;
+        padding-top: 22.5rem;
+        @media (max-width: 76.8rem) {
+            padding-top: 10rem;
         }
     }
 
@@ -19,7 +19,7 @@
     &__all {
         display: flex;
         align-items: center;
-        gap: 19px;
+        gap: 1.9rem;
         font-family: 'Euclid Circular A';
         font-style: normal;
         font-weight: 500;
@@ -46,28 +46,24 @@
     }
 
     &__list {
-        padding-top: 46px;
+        padding-top: 4.6rem;
     }
 
     &__item {
-        margin-top: 42px;
+        margin-top: 4.2rem;
         &:first-child {
-            margin-top: 0px;
+            margin-top: 0rem;
         }
     }
 }
 
 .new {
-    // display: grid;
-    // grid-template-columns: minmax(0px, 511px) auto;
-    // grid-template-rows: repeat(4, auto);
-    // grid-column-gap: 58px;
-    padding: 0px 0px 60px 0px;
+    padding: 0rem 0rem 6rem 0rem;
     border-bottom: 1px solid #D4DBEE;
     display: flex;
-    gap: 58px;
+    gap: 5.8rem;
 
-    @media (max-width: 768px) {
+    @media (max-width: 76.8rem) {
         flex-direction: column;
     }
 
@@ -78,21 +74,19 @@
     &__body {
         display: flex;
         flex-direction: column;
-        max-width: 1035px;
+        max-width: 103.5rem;
         width: 100%;
-        gap: 27px;
+        gap: 2.7rem;
     }
 
     &__image {
-        max-width: 511px;
-        // grid-column: 1;
-        // grid-row: 1 / 4;
+        max-width: 51.1rem;
         img {
             width: 100%;
             object-fit: cover;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 76.8rem) {
             max-width: 100vw;
         }
     }
@@ -104,9 +98,7 @@
         font-size: $post-title-font-size;
         line-height: 3.2rem;
         color: $post-title-color;
-        // grid-column: 2;
-        // grid-row: 1;
-        max-width: 893px;
+        max-width: 89.3rem;
     }
 
     &__description {
@@ -116,19 +108,15 @@
         font-size: $base-font-size;
         line-height: 143%;
         color: $post-title-color;
-        // grid-column: 2;
-        // grid-row: 2;
-        max-width: 893px;
+        max-width: 89.3rem;
     }
 
     &__bottom {
-        // grid-column: 2;
-        // grid-row: 3 / 5;
         margin-top: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: -18px;
+        margin-bottom: -1.8rem;
     }
 
     &__date {
@@ -141,18 +129,18 @@
         span {
             font-size: 3rem;
             line-height: 3.8rem;
-            margin-left: 15px;
+            margin-left: 1.5rem;
         }
     }
 
     &__link {
-        width: 85px;
-        height: 85px;
+        width: 8.5rem;
+        height: 8.5rem;
         border-radius: 50%;
         background: url('../img/btn-arrow.svg') no-repeat center center $orange-color;
-        @media (max-width: 768px) {
-            width: 65px;
-            height: 65px;
+        @media (max-width: 76.8rem) {
+            width: 6.5rem;
+            height: 6.5rem;
         }
     }
 }

@@ -1,35 +1,35 @@
 .mission {
     &__container {
-        padding-top: 231px;
+        padding-top: 23.1rem;
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(4, auto);
-        grid-column-gap: 58px;
+        grid-column-gap: 5.8rem;
         position: relative;
-        @media (max-width: 768px) {
-            padding-top: 115px;
+        @media (max-width: 76.8rem) {
+            padding-top: 11.5rem;
             display: flex;
             flex-direction: column;
-            gap: 25px;
+            gap: 2.5rem;
         }
     }
 
     &__images {
         grid-column: 1;
         grid-row: 1 / 5;
-        @media (max-width: 768px) {
+        @media (max-width: 76.8rem) {
             order: 2;
             display: flex;
         }
     }
 
     &__image {
-        max-width: 510px;
+        max-width: 51rem;
         img {
-            width: 510px;
+            width: 51rem;
             object-fit: cover;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 76.8rem) {
             img {
                 width: 100%;
                 height: 100%;
@@ -45,7 +45,7 @@
     &__subtitle {
         grid-column: 2;
         grid-row: 2;
-        margin-top: 6px;
+        margin-top: 0.6rem;
     }
 
     &__descriptions {
@@ -53,9 +53,9 @@
         grid-row: 3;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 63px;
+        grid-gap: 6.3rem;
         justify-content: space-between;
-        @media (max-width: 768px) {
+        @media (max-width: 76.8rem) {
             display: flex;
             flex-direction: column;
             justify-content: start;
@@ -65,7 +65,7 @@
     }
 
     &__description {
-        @media (max-width: 768px) {
+        @media (max-width: 76.8rem) {
             display: none;
             &:first-child {
                 display: block;
@@ -76,14 +76,14 @@
     &__more {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 2rem;
         grid-column: 2;
         grid-row: 4;
         margin-top: auto;
         a {
             display: block;
-            width: 85px;
-            height: 85px;
+            width: 8.5rem;
+            height: 8.5rem;
             border-radius: 50%;
             background: url('../img/btn-arrow.svg') no-repeat center center $slider-btn-color;
             transition: 0.4s;
@@ -91,9 +91,9 @@
                 cursor: pointer;
                 opacity: 0.8;
             }
-            @media (max-width: 768px) {
-                width: 66px;
-                height: 66px;
+            @media (max-width: 76.8rem) {
+                width: 6.6rem;
+                height: 6.6rem;
             }
         }
         span {
@@ -107,16 +107,16 @@
     }
 
     &__quality {
-        max-width: 149px;
+        max-width: 14.9rem;
         position: absolute;
-        right: 0px;
-        bottom: -89px;
+        right: 0rem;
+        bottom: -8.9rem;
         z-index: 99;
         img {
-            width: 149px;
+            width: 14.9rem;
             object-fit: cover;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 76.8rem) {
             display: none;
         }
     }

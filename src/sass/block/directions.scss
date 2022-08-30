@@ -1,8 +1,8 @@
 .directions {
     &__container {
-        padding-top: 204px;
-        @media (max-width: 768px) {
-            padding-top: 100px;
+        padding-top: 20.4rem;
+        @media (max-width: 76.8rem) {
+            padding-top: 10rem;
         }
     }
 
@@ -14,7 +14,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 12px;
+        margin-top: 1.2rem;
     }
 
     &__direction {
@@ -23,18 +23,13 @@
 
     &__counter {
         display: none;
-        @media (max-width: 768px) {
+        @media (max-width: 76.8rem) {
             display: flex;
             align-items: center;
-            padding-top: 20px;
-            // width: 440px;
-            max-width: 440px;
+            padding-top: 2rem;
+            max-width: 44rem;
             width: 100%;
-            margin: 0px auto;
-        }
-        @media (max-width: 376px) {
-            // width: 223px;
-            // margin: 0px auto;
+            margin: 0rem auto;
         }
     }
 
@@ -59,9 +54,9 @@
     }
 
     &__counter-bar {
-        margin: 0px 18.75px 0px 18px;
+        margin: 0rem 1.75rem 0rem 1.8rem;
         width: 100%;
-        height: 6px;
+        height: 0.6rem;
         background: #D4DBEE;
         display: flex;
         justify-content: space-between;
@@ -70,7 +65,7 @@
     &__counter-progress {
         content: '';
         width: 100%;
-        height: 6px;
+        height: 0.6rem;
         background: #D4DBEE;
 
         &_active{
@@ -84,33 +79,31 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // min-height: 434px;
-    min-height: 571px;
-    max-width: 550px;
-    padding: 50px 57px 0px 57px;
+    min-height: 57.1rem;
+    max-width: 55.0rem;
+    padding: 5rem 5.7rem 0rem 5.7rem;
     transition: 0.4s;
     &:hover {
         cursor: pointer;
         background: #EDF0F5;
-        // padding: 47px 51px 48px 51px;
-        @media (max-width: 768px) {
-            // padding: 50px 57px 50px 57px;
+        @media (max-width: 76.8rem) {
         }
 
         .direction__image {
             transform: scale(1.1, 1.1);
-            @media (max-width: 768px) {
+            @media (max-width: 76.8rem) {
                 transform: scale(1, 1);
             }
         }
     }
-    @media (max-width: 768px) {
+    @media (max-width: 76.8rem) {
         display: none;
         max-width: 100%;
-        min-height: 650px;
-        width: 100vw;
+        min-height: 65rem;
+        // width: 100vw;
+        width: 100%;
         background: #EDF0F5;
-        padding: 50px 57px 50px 57px;
+        padding: 5rem 5.7rem 5rem 5.7rem;
         animation-name: fade;
         animation-duration: 1.5s;
         @keyframes fade {
@@ -125,8 +118,8 @@
             display: flex;
         }
     }
-    @media (max-width: 376px) {
-        min-height: 550px;
+    @media (max-width: 37.6rem) {
+        min-height: 55rem;
     }
 
     &_center {
@@ -134,12 +127,10 @@
     }
 
     &__image {
-        // max-width: 257px;
-        max-width: 258px;
-        max-height: 287px;
+        max-width: 25.8rem;
+        max-height: 28.7rem;
         transition: 0.4s;
         img {
-            // width: 257px;
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -154,7 +145,7 @@
         line-height: 3.2rem;
         color: #292A3F;
         text-align: center;
-        margin-top: 50px;
+        margin-top: 5rem;
     }
 
     &__description {
@@ -166,9 +157,9 @@
         text-align: center;
         color: $base-color;
         text-align: center;
-        margin-top: 19px;
-        max-width: 410px;
-        @media (max-width: 768px) {
+        margin-top: 1.9rem;
+        max-width: 41rem;
+        @media (max-width: 76.8rem) {
             max-width: 100%;
         }
     }
