@@ -4,7 +4,7 @@
         display: grid;
         grid-template-columns: auto repeat(2, minmax(0rem, 48.4rem));
         grid-template-rows: repeat(2, auto);
-        @media (max-width: 76.8rem) {
+        @media (max-width: 48rem) {
             display: none;
         }
     }

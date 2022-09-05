@@ -1,7 +1,7 @@
 .directions {
     &__container {
         padding-top: 20.4rem;
-        @media (max-width: 76.8rem) {
+        @media (max-width: 48rem) {
             padding-top: 10rem;
         }
     }
@@ -23,7 +23,7 @@
 
     &__counter {
         display: none;
-        @media (max-width: 76.8rem) {
+        @media (max-width: 48rem) {
             display: flex;
             align-items: center;
             padding-top: 2rem;
@@ -86,17 +86,17 @@
     &:hover {
         cursor: pointer;
         background: #EDF0F5;
-        @media (max-width: 76.8rem) {
+        @media (max-width: 48rem) {
         }
 
         .direction__image {
             transform: scale(1.1, 1.1);
-            @media (max-width: 76.8rem) {
+            @media (max-width: 48rem) {
                 transform: scale(1, 1);
             }
         }
     }
-    @media (max-width: 76.8rem) {
+    @media (max-width: 48rem) {
         display: none;
         max-width: 100%;
         min-height: 65rem;
@@ -159,7 +159,7 @@
         text-align: center;
         margin-top: 1.9rem;
         max-width: 41rem;
-        @media (max-width: 76.8rem) {
+        @media (max-width: 48rem) {
             max-width: 100%;
         }
     }

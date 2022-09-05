@@ -4,7 +4,7 @@
     margin: 0rem auto;
     left: 0;
     right: 0;
-    @media (max-width: 76.8rem) {
+    @media (max-width: 48rem) {
         background-color: #fff;
     }
 
@@ -13,7 +13,7 @@
         padding-top: 7.4rem;
         display: grid;
         grid-template-columns: auto auto;
-        @media (max-width: 76.8rem) {
+        @media (max-width: 48rem) {
             // max-width: 72rem;
             max-width: 100%;
             padding-top: 1.3rem;
@@ -26,7 +26,7 @@
 
     &__burger {
         display: none;
-        @media (max-width: 76.8rem) {
+        @media (max-width: 48rem) {
             display: block;
             width: 9rem;
         }
@@ -34,7 +34,7 @@
 
     &__phone {
         display: none;
-        @media (max-width: 76.8rem) {
+        @media (max-width: 48rem) {
             display: block;
             max-width: 9rem;
             svg {
@@ -52,7 +52,7 @@
             width: 100%;
             height: 100%;
         }
-        @media (max-width: 76.8rem) {
+        @media (max-width: 48rem) {
             max-width: 9rem;
             max-height: 7.3rem;
             padding: 0rem 0rem 0rem 0rem;
@@ -68,7 +68,7 @@
 }
 
 .menu {
-    @media (max-width: 76.8rem) {
+    @media (max-width: 48rem) {
         position: absolute;
         top: 11.6rem;
         left: -100%;
@@ -85,7 +85,7 @@
         display: flex;
         align-items: center;
         justify-content: start;
-        @media (max-width: 76.8rem) {
+        @media (max-width: 48rem) {
             flex-direction: column;
             justify-content: start;
             align-items: start;
@@ -103,7 +103,7 @@
             height: 1.4rem;
             background-color: $menu-sep-color;
             margin-left: 2.6rem;
-            @media (max-width: 76.8rem) {
+            @media (max-width: 48rem) {
                 display: none;
             }
         }
